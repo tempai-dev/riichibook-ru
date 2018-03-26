@@ -1,18 +1,22 @@
 %Preamble ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \documentclass{book}
+\input luatexja.sty
 \makeindex  %mendex RiichiBook1.idx
 	% Put "\thispagestyle{empty}" in RiichiBook1.ind
 % Font
 \usepackage{pie2e}  % Printing mahjong tiles (from the piemf package)
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage[russian,english]{babel}
+
 \usepackage{blindtext,tgpagella,textcomp,amsmath,tipa,lipsum,eurosym}
 % graphic commands
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{graphicx, graphics,color,wrapfig,tikz}
 \usepackage[abs]{overpic}
-\usepackage[dvipdfmx]{pict2e}
-\usepackage[dvipdfmx,colorlinks=true, urlcolor={blue!50!blue}, citecolor={blue!50!blue}, linkcolor={MyBlue}]{hyperref}
+
+\usepackage{pict2e}
+\usepackage[colorlinks=true, urlcolor={blue!50!blue}, citecolor={blue!50!blue}, linkcolor={MyBlue}]{hyperref}
 
 % To remove page numbers from TOC
 %\let\Contentsline\contentsline
